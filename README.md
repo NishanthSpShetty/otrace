@@ -17,20 +17,20 @@ import "github.com/NishanthSpShetty/otrace/trace"
 
 ```
 
-	config := trace.ProviderConfig{
-		JaegerEndpoint: "",
-		ServiceName:    "",
-		ServiceVersion: "",
-		Environment:    "",
-		Disabled:       false,
-	}
+config := trace.ProviderConfig{
+	JaegerEndpoint: "",
+	ServiceName:    "",
+	ServiceVersion: "",
+	Environment:    "",
+	Disabled:       false,
+}
   
-  tp, err := trace.NewProvider(config)
+tp, err := trace.NewProvider(config)
   
-  if err != nil{
-   ...
-  }
-  defer tp.Close(ctx)
+if err != nil{
+...
+}
+defer tp.Close(ctx)
 ```
 
 ### tracing using functions exported from trace package
