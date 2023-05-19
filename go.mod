@@ -1,4 +1,4 @@
-module github.com/NishanthSpShettyShetty/otrace
+module github.com/NishanthSpShetty/otrace
 
 go 1.20
 
